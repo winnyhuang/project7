@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+.row {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.row.perspective {
+  -webkit-perspective: 50em;
+}
+.row.perspective .square {
+  -webkit-transform: rotatex(50deg);
+}
+.row.straight {
+  -webkit-perspective: 0em;
+}
+.row.straight .square {
+  -webkit-transform: rotatex(0deg);
+}
+.row.perspective-vertical {
+  -webkit-perspective: 50em;
+}
+.row.perspective-vertical .square {
+  -webkit-transform: rotatey(50deg);
+}
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #0099ff;
+  display: inline-block;
+}

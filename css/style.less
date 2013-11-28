@@ -1,0 +1,49 @@
+@import "variables.less";
+
+* {
+  box-sizing: border-box;
+}
+
+.row{
+
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+
+  &.perspective{
+  -webkit-perspective:50em;
+
+    .square{
+      -webkit-transform: rotatex(50deg)
+    }
+
+
+  }
+  &.straight{
+  -webkit-perspective:0em;
+
+     .square{
+      -webkit-transform: rotatex(0deg);
+    }
+  }
+
+  &.perspective-vertical{
+  -webkit-perspective:50em;
+
+     .square{
+      -webkit-transform: rotatey(50deg)
+    }
+  }
+
+}
+
+
+
+.square{
+height:@height;
+width:@width;
+background-color:@blue;
+display:inline-block;
+}
+  
+  
